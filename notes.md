@@ -265,6 +265,18 @@ Get-AzSubscription
 Get-AzResource
 ```
 
+##### Enumerate all blob
+
+```
+Get-AzStorageBlobContent -Container <NAME> -Context (Get-AzStorageAccount -name <NAME> -ResourceGroupName <NAME>).context -Blob
+```
+
+##### Enumerate all blob
+
+```
+Get-AzStorageContainer -Context (Get-AzStorageAccount -name <NAME> -ResourceGroupName <NAME>).context
+```
+
 ##### Enumerate all Azure RBAC role assignments
 
 ```
